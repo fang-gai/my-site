@@ -1,0 +1,35 @@
+.pop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  padding: 0 20px;
+  height: 50px;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  white-space: nowrap; //由于没有固定宽度，在父容器过窄的情况下为了不让元素溢出，会自动换行
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+}
+
+.message {
+  font-size: 15px;
+}
+.success {
+  background: var(--success);
+}
+.info {
+  background: var(--link);
+}
+.warn {
+  background: var(--warn);
+}
+.error {
+  background: var(--danger);
+}
